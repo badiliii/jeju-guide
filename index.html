@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>济州岛两日逛吃攻略 · 2026.11.28-29</title>
+<meta name="description" content="济州岛两日逛吃攻略：东线一日团（牛岛·日出峰·涉地可支）+西线南线自由行（涯月·挟才·柱状节理带），含餐厅大众点评链接、预算与韩语速查。">
+<meta property="og:title" content="济州岛两日逛吃攻略 🍊">
+<meta property="og:description" content="东线一日团+西线自由行 · 9家餐厅点评直达 · 预算与实用信息全齐">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🍊</text></svg>">
+
+<style>
+:root{
+  --orange:#F59E0B; --orange-deep:#D97706; --orange-bg:#FFF7E6;
+  --sea:#0284C7; --sea-bg:#E0F2FE; --ink:#1F2937; --muted:#6B7280;
+  --card:#FFFFFF; --line:#F1F5F9; --green:#10B981;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:var(--ink);background:#FAFBFC;line-height:1.7;}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 60px;}
+
+/* hero */
+.hero{background:linear-gradient(135deg,#FFB020 0%,#F59E0B 55%,#EA8C0C 100%);color:#fff;border-radius:0 0 28px 28px;padding:52px 24px 44px;text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.14);}
+.hero::after{content:"";position:absolute;bottom:-60px;left:-30px;width:160px;height:160px;border-radius:50%;background:rgba(255,255,255,.10);}
+.hero .tag{display:inline-block;background:rgba(255,255,255,.22);padding:4px 14px;border-radius:999px;font-size:13px;letter-spacing:2px;margin-bottom:14px;}
+.hero h1{font-size:34px;letter-spacing:1px;margin-bottom:10px;position:relative;z-index:1;}
+.hero p{font-size:15px;opacity:.95;position:relative;z-index:1;}
+.hero .dates{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:18px;position:relative;z-index:1;}
+.topnav{position:sticky;top:0;z-index:99;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line);display:flex;overflow-x:auto;scrollbar-width:none;padding:8px 14px;gap:2px;}
+.topnav::-webkit-scrollbar{display:none;}
+.topnav a{flex:none;font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;padding:5px 13px;border-radius:999px;transition:all .2s;white-space:nowrap;}
+.topnav a:hover{color:var(--orange-deep);background:var(--orange-bg);}
+
+.hero .dates span{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:6px 16px;border-radius:10px;font-size:14px;}
+
+h2{font-size:22px;margin:44px 0 18px;display:flex;align-items:center;gap:10px;}
+h2 .num{background:var(--orange);color:#fff;width:32px;height:32px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;font-size:16px;flex:none;}
+h2 .sub{font-size:13px;color:var(--muted);font-weight:normal;}
+
+/* flight cards */
+.flight{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+@media(max-width:640px){.flight{grid-template-columns:1fr;}}
+.fcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+.fcard .dir{font-size:13px;color:var(--sea);font-weight:600;margin-bottom:6px;}
+.fcard .route{font-size:18px;font-weight:700;}
+.fcard .time{font-size:14px;color:var(--muted);margin-top:4px;}
+.fcard .note{font-size:13px;color:var(--orange-deep);margin-top:8px;background:var(--orange-bg);border-radius:8px;padding:4px 10px;}
+
+.hotel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:0 1px 3px rgba(0,0,0,.04);margin-top:14px;}
+.hotel b{font-size:16px;}
+.hotel .hnote{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+.hotel .hnote span{font-size:13px;background:var(--sea-bg);color:var(--sea);border-radius:999px;padding:3px 12px;}
+
+/* ============ 景点图鉴（交互轮播） ============ */
+
+/* ============ 手绘路线图 ============ */
+.mapbox{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,.04);margin-top:20px;}
+.mapbox .maptitle{font-size:17px;font-weight:800;color:var(--orange-deep);margin-bottom:4px;}
+.mapbox .mapsub{font-size:12.5px;color:var(--muted);margin-bottom:12px;}
+.mapbox svg{width:100%;height:auto;display:block;}
+.maplegend{display:flex;flex-wrap:wrap;gap:16px;margin-top:12px;font-size:12.5px;color:#374151;align-items:center;}
+.maplegend .li{display:flex;align-items:center;gap:6px;}
+.maplegend .sw{width:26px;height:0;border-top:4px solid;border-radius:2px;}
+.maplegend .sw.dash{border-top-style:dashed;}
+.maplegend .pt{width:12px;height:12px;border-radius:50%;border:3px solid;display:inline-block;background:#fff;box-sizing:border-box;}
+.routechain{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:0 1px 3px rgba(0,0,0,.04);margin-top:14px;}
+.routechain .rc-title{font-size:14px;font-weight:700;margin-bottom:10px;color:var(--orange-deep);}
+.routechain.d2 .rc-title{color:var(--sea);}
+.routechain .rc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;row-gap:8px;}
+.routechain .rc b{background:var(--orange-bg);color:var(--orange-deep);border-radius:999px;padding:4px 13px;font-size:13px;font-weight:600;white-space:nowrap;}
+.routechain.d2 .rc b{background:var(--sea-bg);color:var(--sea);}
+.routechain .rc b.meal{box-shadow:inset 0 -2px 0 rgba(2,132,199,.35);}
+.routechain .rc i{font-style:normal;color:#CBD5E1;font-weight:800;font-size:15px;}
+
+/* day timeline */
+.day{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+.day .dayhead{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:2px dashed var(--line);padding-bottom:12px;margin-bottom:16px;}
+.day .dayhead .d{font-size:20px;font-weight:800;color:var(--orange-deep);}
+.day{border-top:4px solid var(--orange);margin-top:24px;}
+.day .dayhead .theme{font-size:13px;background:var(--orange-bg);color:var(--orange-deep);padding:3px 12px;border-radius:999px;}
+.day .dayhead .weather{font-size:13px;color:var(--muted);}
+.stop{position:relative;padding:0 0 14px 32px;}
+.stop:last-child{padding-bottom:4px;}
+.stop::before{content:"";position:absolute;left:9px;top:8px;bottom:-6px;width:2px;background:var(--line);}
+.stop:last-child::before{display:none;}
+.stop .dot{position:absolute;left:0;top:8px;width:20px;height:20px;border-radius:50%;background:#fff;border:5px solid var(--orange);box-sizing:border-box;}
+.stop .head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+.stop .t{font-size:14.5px;font-weight:800;color:var(--sea);letter-spacing:.3px;}
+.stop .t em{font-style:normal;font-size:12px;font-weight:600;color:var(--orange-deep);background:var(--orange-bg);border-radius:6px;padding:1px 9px;}
+.stop .name{font-size:15.5px;font-weight:700;line-height:1.5;}
+.stop p{font-size:13.5px;color:#4B5563;margin:3px 0 0;line-height:1.65;}
+.stop .tips{margin-top:6px;font-size:12.5px;background:var(--orange-bg);border-radius:10px;padding:6px 11px;color:#92400E;line-height:1.6;}
+.stop .tips b{color:var(--orange-deep);}
+/* dianping links */
+.dp-link{display:inline-flex;align-items:center;gap:4px;margin-left:10px;font-size:12px;font-weight:600;color:#FF6600;text-decoration:none;background:#FFF1E8;border:1px solid #FFD9C2;border-radius:999px;padding:2px 12px;white-space:nowrap;transition:all .2s;vertical-align:middle;}
+.dp-link:hover{background:#FF6600;color:#fff;border-color:#FF6600;}
+.stop .name .dp-link{font-size:12px;margin-left:8px;padding:1px 10px;}
+
+.stop.meal .dot{border-color:var(--sea);}
+.stop.meal .t em{color:var(--sea);}
+.stop.meal .name{color:var(--sea);}
+.stop.meal .tips{background:var(--sea-bg);color:#075985;}
+.stop.meal .tips b{color:var(--sea);}
+.day + .day{margin-top:20px;}
+
+/* checklist */
+.checks{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:14px;}
+.check{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+.check .fn{display:flex;justify-content:space-between;align-items:baseline;gap:8px;}
+.check .fn b{font-size:15px;}
+.check .fn i{font-style:normal;font-size:13px;color:var(--green);white-space:nowrap;}
+.check p{font-size:13px;color:var(--muted);margin-top:4px;}
+.check .meta{font-size:12px;color:var(--sea);margin-top:8px;line-height:1.6;}
+/* budget */
+.budget{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 1px 3px rgba(0,0,0,.04);margin-top:20px;}
+.budget .bt{font-size:17px;font-weight:800;color:var(--orange-deep);margin-bottom:14px;}
+.budget table{margin-bottom:16px;}
+.budget tfoot td{font-weight:700;background:var(--orange-bg);color:var(--orange-deep);border-top:2px solid var(--orange);}
+.budget .bnote{font-size:13px;color:#4B5563;background:var(--sea-bg);border-radius:10px;padding:10px 14px;line-height:1.8;}
+.budget .bnote b{color:var(--sea);}
+.budget-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:14px;}
+.bsum{background:linear-gradient(135deg,#FFF7E6,#FFEFD2);border:1px solid #FFD9A0;border-radius:16px;padding:16px 18px;}
+.bsum .n{font-size:13px;color:#92400E;}
+.bsum .v{font-size:26px;font-weight:800;color:var(--orange-deep);line-height:1.3;}
+.bsum .s{font-size:12px;color:#B45309;margin-top:2px;}
+
+.check .warn2{font-size:12px;color:#B91C1C;margin-top:6px;}
+
+/* info grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;}
+.info{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+.info h3{font-size:15px;color:var(--orange-deep);margin-bottom:8px;}
+.info li,.info p{font-size:13.5px;color:#374151;}
+.info ul{padding-left:18px;}
+.warn{background:#FEF2F2;border:1px solid #FECACA;border-radius:16px;padding:18px 20px;}
+.warn h3{color:#B91C1C;font-size:15px;margin-bottom:8px;}
+.warn li{font-size:13.5px;color:#7F1D1D;}
+
+/* packing */
+.pack{display:flex;flex-wrap:wrap;gap:10px;}
+.pack span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 16px;font-size:13.5px;}
+
+/* korean phrase */
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:16px;overflow:hidden;font-size:13.5px;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);}
+th{background:var(--sea-bg);color:var(--sea);font-size:13px;}
+tr:last-child td{border-bottom:none;}
+
+footer{text-align:center;color:var(--muted);font-size:13px;margin-top:48px;padding-top:24px;border-top:1px solid var(--line);}
+h2{scroll-margin-top:56px;}
+.stop{transition:transform .2s;}
+.stop:hover{transform:translateX(4px);}
+#backTop{position:fixed;right:18px;bottom:24px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--orange-deep);font-size:18px;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.12);display:none;align-items:center;justify-content:center;z-index:98;transition:all .2s;font-family:inherit;}
+#backTop:hover{background:var(--orange);color:#fff;border-color:var(--orange);}
+@keyframes rise{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:none;}}
+.rise{animation:rise .5s ease both;}
+
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="#sec1">✈️ 总览</a><a href="#sec2">🗺️ 路线图</a><a href="#sec3">📅 行程</a><a href="#sec4">✅ 打卡</a><a href="#sec5">💰 预算</a><a href="#sec6">📋 实用</a><a href="#sec7">🎒 打包</a><a href="#sec8">🗣️ 韩语</a>
+</nav>
+<div class="hero">
+  <div class="tag">JEJU ISLAND · 济州岛</div>
+  <h1>济州岛打卡之旅</h1>
+  <p>11月28日 - 29日 · 朋友结伴 · 指定美食 + 打卡路线</p>
+  <div class="dates">
+    <span>✈️ 11.27（周五）晚出发</span>
+    <span>🏨 3晚 格洛斯特酒店</span>
+    <span>✈️ 11.30（周一）早返程</span>
+  </div>
+</div>
+
+<div class="wrap">
+
+<!-- 行程总览 -->
+<h2 id="sec1"><span class="num">1</span>行程总览 <span class="sub">｜航班 & 住宿</span></h2>
+<div class="flight">
+  <div class="fcard">
+    <div class="dir">去程 · 11月27日（周五）</div>
+    <div class="route">杭州萧山机场 T4 → 济州国际机场</div>
+    <div class="time">19:55 起飞（北京时间） — 22:10 落地（济州当地时间）</div>
+    <div class="note">⚠️ 济州比北京快 1 小时，落地已近午夜：提前在 Naver Map 存好酒店韩文地址，落地直接打车</div>
+  </div>
+  <div class="fcard">
+    <div class="dir">返程 · 11月30日（周一）</div>
+    <div class="route">济州国际机场 → 杭州萧山机场 T4</div>
+    <div class="time">07:50 起飞（济州当地时间） — 08:14 落地（北京时间）</div>
+    <div class="note">⚠️ 早班机：建议 05:30 前出发去机场，打车仅 5-10 分钟；机场店铺 9 点后才开</div>
+  </div>
+</div>
+<div class="hotel">
+  <b>🏨 济州格洛斯特酒店 Gloucester Hotel Jeju</b>（莲洞商圈 · 三无路57）
+  <a class="dp-link" href="https://a.feizhu.com/0TzSUo" target="_blank" rel="noopener">🧧 飞猪预订页</a>
+  <div class="hnote">
+    <span>距机场打车约 5 分钟 / 5000-6000 韩元</span>
+    <span>步行可达宝健路、新罗&乐天免税店</span>
+    <span>酒店2楼有 7-11</span>
+    <span>斜对面就是校村炸鸡</span>
+  </div>
+  <p style="font-size:13px;color:var(--muted);margin-top:8px;">韩文地址（打车用）：제주특별자치도 제주시 삼무로 57 ｜ 入住 15:00 后 · 退房 11:00 前 · 需自备洗漱用品</p>
+</div>
+
+<!-- 手绘路线图 -->
+<h2 id="sec2"><span class="num">2</span>两天路线总览图 <span class="sub">｜济州岛地图 · 一图看懂动线</span></h2>
+<div class="mapbox">
+  <div class="maptitle">🗺️ 济州岛两日动线图</div>
+  <div class="mapsub">Day1 东线（周六·橙实线） ｜ Day2 西+南线（周日·蓝虚线） ｜ 序号即当天顺序</div>
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="seaC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DDEFFA"/><stop offset="1" stop-color="#A8D8F0"/>
+    </linearGradient>
+    <radialGradient id="mtnC" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8B9D6E"/><stop offset="1" stop-color="#B5C49A"/>
+    </radialGradient>
+    <marker id="cO" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C2410C"/></marker>
+    <marker id="cB" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0369A1"/></marker>
+  </defs>
+  <rect width="760" height="460" rx="16" fill="url(#seaC)"/>
+  <!-- 浅滩带（海岸周围浅色一圈） -->
+  <path d="M96,228 C96,168 118,128 158,108 C196,90 236,84 268,72 C306,58 348,50 396,48 C452,45 508,52 552,72 C592,90 620,112 636,142 C648,164 652,192 650,216 C648,240 650,258 644,280 C638,302 626,322 606,338 C576,362 534,378 488,388 C440,398 396,400 352,396 C306,392 260,382 216,362 C172,342 132,312 110,276 C100,258 95,244 96,228 Z"
+    fill="none" stroke="#8FD0F0" stroke-width="14" opacity=".55"/>
+  <!-- 岛体 -->
+  <path d="M96,228 C96,168 118,128 158,108 C196,90 236,84 268,72 C306,58 348,50 396,48 C452,45 508,52 552,72 C592,90 620,112 636,142 C648,164 652,192 650,216 C648,240 650,258 644,280 C638,302 626,322 606,338 C576,362 534,378 488,388 C440,398 396,400 352,396 C306,392 260,382 216,362 C172,342 132,312 110,276 C100,258 95,244 96,228 Z"
+    fill="#EDE4C8" stroke="#8B7B57" stroke-width="2.2"/>
+  <!-- 中部山地色带（真实济州中部为高地） -->
+  <ellipse cx="335" cy="215" rx="240" ry="105" fill="#D6D3A8" opacity=".5"/>
+  <ellipse cx="335" cy="212" rx="170" ry="72" fill="#C2C79B" opacity=".6"/>
+  <ellipse cx="330" cy="210" rx="105" ry="42" fill="url(#mtnC)" opacity=".9"/>
+  <ellipse cx="330" cy="218" rx="62" ry="24" fill="#7E9160" opacity=".8"/>
+  <path d="M314,212 L330,168 L346,212 Z" fill="#6B7F52"/>
+  <path d="M325,182 L330,168 L335,182 Z" fill="#F5F5F0"/>
+  <text x="330" y="246" font-size="11" fill="#44502F" text-anchor="middle" font-weight="600" font-family="inherit">汉拿山 1,950m</text>
+  <!-- 中部道路（横向横断公路，黄色细线） -->
+  <path d="M250,120 C320,150 380,200 440,260 C470,290 520,330 600,350" fill="none" stroke="#E5C97A" stroke-width="1.8" opacity=".7"/>
+  <path d="M130,170 C220,200 300,230 380,236 C450,240 520,260 560,300" fill="none" stroke="#E5C97A" stroke-width="1.8" opacity=".7"/>
+  <path d="M330,180 C340,230 350,300 360,380" fill="none" stroke="#E5C97A" stroke-width="1.4" opacity=".55"/>
+  <!-- 城市块 -->
+  <rect x="210" y="112" width="84" height="26" rx="6" fill="#D9B98C" opacity=".65"/>
+  <text x="252" y="130" font-size="11" fill="#7C5A2E" text-anchor="middle" font-family="inherit" font-weight="700">济州市</text>
+  <rect x="430" y="360" width="82" height="22" rx="6" fill="#D9B98C" opacity=".55"/>
+  <text x="470" y="375" font-size="10.5" fill="#7C5A2E" text-anchor="middle" font-family="inherit" font-weight="700">西归浦市</text>
+  <!-- 牛岛 -->
+  <ellipse cx="678" cy="86" rx="22" ry="14" fill="#EDE4C8" stroke="#8B7B57" stroke-width="2.2"/>
+  <text x="678" y="60" font-size="11.5" fill="#7C5A2E" text-anchor="middle" font-weight="700" font-family="inherit">牛岛</text>
+  <!-- 路线 Day1 -->
+  <g fill="none" stroke="#C2410C" stroke-width="4" stroke-linecap="round">
+    <path d="M252,112 C390,66 500,72 566,122" marker-end="url(#cO)"/>
+    <path d="M566,122 C588,116 630,104 672,94" marker-end="url(#cO)"/>
+    <path d="M672,94 C640,104 600,120 566,122" marker-end="url(#cO)"/>
+    <path d="M566,122 C560,148 548,172 530,190" marker-end="url(#cO)"/>
+    <path d="M530,190 C500,196 462,192 428,182" marker-end="url(#cO)"/>
+    <path d="M428,182 C376,146 316,128 276,146" marker-end="url(#cO)"/>
+  </g>
+  <!-- 路线 Day2 -->
+  <g fill="none" stroke="#0369A1" stroke-width="4" stroke-linecap="round" stroke-dasharray="13 9">
+    <path d="M268,140 C210,128 158,140 128,162" marker-end="url(#cB)"/>
+    <path d="M128,162 C108,190 104,220 116,248" marker-end="url(#cB)"/>
+    <path d="M116,248 C186,318 280,380 372,392" marker-end="url(#cB)"/>
+    <path d="M372,392 C318,314 292,214 276,142" marker-end="url(#cB)"/>
+  </g>
+  <!-- 停靠点 -->
+  <g font-family="inherit" font-size="12" font-weight="700" text-anchor="middle">
+    <g fill="#7C2D12">
+      <circle cx="672" cy="94" r="11.5" fill="#fff" stroke="#C2410C" stroke-width="3"/><text x="672" y="98">1</text>
+      <circle cx="566" cy="122" r="11.5" fill="#fff" stroke="#C2410C" stroke-width="3"/><text x="566" y="126">2</text>
+      <circle cx="530" cy="190" r="11.5" fill="#fff" stroke="#C2410C" stroke-width="3"/><text x="530" y="194">3</text>
+      <circle cx="428" cy="182" r="11.5" fill="#fff" stroke="#C2410C" stroke-width="3"/><text x="428" y="186">4</text>
+      <circle cx="276" cy="146" r="11.5" fill="#fff" stroke="#C2410C" stroke-width="3"/><text x="276" y="150">5</text>
+    </g>
+    <g fill="#0C4A6E">
+      <circle cx="128" cy="162" r="11.5" fill="#fff" stroke="#0369A1" stroke-width="3"/><text x="128" y="166">6</text>
+      <circle cx="116" cy="248" r="11.5" fill="#fff" stroke="#0369A1" stroke-width="3"/><text x="116" y="252">7</text>
+      <circle cx="372" cy="392" r="11.5" fill="#fff" stroke="#0369A1" stroke-width="3"/><text x="372" y="396">8</text>
+      <circle cx="276" cy="142" r="11.5" fill="#fff" stroke="#0369A1" stroke-width="3"/><text x="276" y="146">9</text>
+    </g>
+  </g>
+  <g font-family="inherit" font-size="11.5" font-weight="600" style="paint-order:stroke" stroke="#F5F0DC" stroke-width="3" stroke-linejoin="round">
+    <text x="620" y="72" fill="#7C2D12">牛岛</text>
+    <text x="584" y="118" fill="#7C2D12">日出峰</text>
+    <text x="570" y="212" fill="#7C2D12">涉地可支</text>
+    <text x="428" y="158" fill="#7C2D12">月汀里</text>
+    <text x="276" y="122" fill="#7C2D12">咸德</text>
+    <text x="278" y="168" fill="#7C2D12" font-size="10.5" font-weight="500" stroke-width="2.6">晚餐·离团</text>
+    <text x="128" y="140" fill="#0C4A6E">涯月</text>
+    <text x="116" y="274" fill="#0C4A6E">挟才</text>
+    <text x="372" y="420" fill="#0C4A6E">柱状节理带</text>
+    <text x="330" y="142" fill="#0C4A6E">猪蹄·七星路</text>
+  </g>
+  <g transform="translate(700,36)">
+    <circle r="17" fill="#fff" stroke="#6B7B57" stroke-width="1.8"/>
+    <path d="M0,-11 L4,6 L0,3 L-4,6 Z" fill="#C0392B"/>
+    <text y="-22" font-size="11" text-anchor="middle" fill="#475569" font-weight="700" font-family="inherit">N</text>
+  </g>
+  <g transform="translate(36,432)">
+    <rect width="34" height="5" rx="2" fill="#44503F"/>
+    <text x="17" y="18" font-size="9.5" text-anchor="middle" fill="#44503F" font-family="inherit">10 km</text>
+  </g>
+  <text x="30" y="447" font-size="10" fill="#5B6350" font-family="inherit" opacity=".85">— JEJU ISLAND · 2026.11 · 两日动线 —</text>
+</svg>
+  <div class="maplegend">
+    <span class="li" style="color:#B45309;"><b style="color:#E8900A;">Day1</b>&nbsp;
+      <span style="color:#92400E;">①牛岛 ②日出峰 ③涉地可支 ④月汀里 ⑤咸德(晚餐GOBDEULRAK)</span></span>
+    <span class="li" style="color:#075985;"><b style="color:#0284C7;">Day2</b>&nbsp;
+      <span style="color:#075985;">⑥Slowboat ⑦休止符 ⑧柱状节理带 ⑨Baro猪蹄</span></span>
+    <span class="li"><span class="sw" style="border-color:#E8900A;"></span>周六·东线</span>
+    <span class="li"><span class="sw dash" style="border-color:#0284C7;"></span>周日·西+南线</span>
+    <span class="li">A=机场</span>
+  </div>
+</div>
+
+<div class="routechain">
+  <div class="rc-title">📅 Day1 动线 · 11.28 周六 · 东线</div>
+  <div class="rc">
+    <b class="meal">🚌 07:10酒店接</b><i>→</i><b>🐮 牛岛(3-4h含午餐)</b><i>→</i><b>⛰️ 日出峰50min</b><i>→</i><b>🌊 涉地可支50min</b><i>→</i><b>🌙 月汀里40min</b><i>→</i><b>🏖️ 咸德(可离团)</b><i>→</i><b class="meal">🐷 GOBDEULRAK黑猪(咸德·晚)</b>
+  </div>
+</div>
+<div class="routechain d2">
+  <div class="rc-title">📅 Day2 动线 · 11.29 周日 · 西线+南线</div>
+  <div class="rc">
+    <b class="meal">🍙 轻早餐</b><i>→</i><b class="meal">☕ Slowboat咖啡</b><i>→</i><b class="meal">🦑 涯月午餐</b><i>→</i><b class="meal">🎶 休止符咖啡</b><i>→</i><b>🪨 柱状节理(17:40前)</b><i>→</i><b class="meal">🍖 Baro猪蹄(晚)</b><i>→</i><b>🛍️ 七星路·宝健路夜逛</b>
+  </div>
+</div>
+
+<!-- 景点图鉴 -->
+
+<!-- Day1 -->
+<h2 id="sec3"><span class="num">3</span>逐日行程 <span class="sub">｜东线一日 + 西南线一日</span></h2>
+
+<div class="day">
+  <div class="dayhead">
+    <span class="d">11.27 周五 · 落地夜</span>
+    <span class="theme">抵达 & 补给</span>
+    <span class="weather">夜温约 10℃</span>
+  </div>
+  <div class="stop meal">
+    <div class="dot"></div>
+    <div class="head"><span class="t">23:30 <em>酒店安顿</em></span><span class="name">打车直奔格洛斯特酒店</span></div>
+    <p>机场到莲洞商圈仅 5-10 分钟车程。把韩文地址给司机看即可，约 5,000-6,000 韩元。</p>
+  </div>
+  <div class="stop meal">
+    <div class="dot"></div>
+    <div class="head"><span class="t">00:00 <em>楼下步行可达</em></span><span class="name"><a class="dp-link" href="https://m.dianping.com/shopinfo/H87phuz9xPGMaLgD" target="_blank" rel="noopener">宵夜：24时土豆排骨汤 🍲 落地暖胃</a></span></div>
+    <p>45 年老店（点评 4.8 分）就在酒店同一条街（47 Sammu-ro，与酒店 57 Sammu-ro 相邻），<b>24 小时营业</b>——落地近午夜 + 11 月底夜温 10℃，安顿完下楼走几分钟就能喝上一锅热气腾腾的脊骨土豆汤：脱骨软烂、土豆粉糯、微辣暖身，人均约 ¥62，是缓解飞行疲惫的完美第一餐。</p>
+    <div class="tips"><b>信息：</b>地址 47 Sammu-ro（酒店同街）｜ 24小时营业随时可去 ｜ 排骨脱骨土豆粉糯，收尾加拉面煮汤面是隐藏吃法 ｜ 吃完步行回酒店，一夜好眠</div>
+  </div>
+</div>
+
+<div class="day">
+  <div class="dayhead">
+    <span class="d">11.28 周六 · Day 1</span>
+    <span class="theme">东线一日团：牛岛 → 日出峰 → 涉地可支 → 月汀里 → 咸德</span>
+    <span class="weather">5-14℃ · 海边风大</span>
+  </div>
+  <div class="stop">
+    <div class="dot"></div>
+    <div class="head"><span class="t">06:45 <em>酒店2楼</em></span><span class="name">早餐：7-11 饭团+热饮 简单解决</span></div>
+    <p>昨晚的脊骨汤还热在胃里，今天赶 7:10 集合，早餐从简：酒店 2 楼 7-11 买个饭团三明治+热咖啡，跟团上午的牛岛有 3-4 小时游玩+午餐时段，饿不着。</p>
+  </div>
+  <div class="stop">
+    <div class="dot"></div>
+    <div class="head"><span class="t">07:10 <em>酒店集合</em></span><span class="name">东线一日团出发（飞猪 · C豪华线）🚌</span></div>
+    <p>5-14 人精品小团、中文导游、含酒店接送——今天不用操心东线交通。参考时刻：07:10 左右济州市区酒店接人，具体接车时间以出团通知为准（通常前一晚短信/App 通知）。</p>
+    <div class="tips"><b>⚠️ 出团前确认：</b>① 报名时填<b>格洛斯特酒店</b>（제주 제주시 삼무로 57）为接送点；② 牛岛乘船需护照，随团也逃不掉，出门必带；③ 具体时间与路线顺序以司机导游安排为准。</div>
+  </div>
+  <div class="stop meal">
+    <div class="dot"></div>
+    <div class="head"><span class="t">08:50-12:50 <em>牛岛 🐮</em></span><span class="name">跟团游牛岛（约 3-4 小时，含午餐时段）</span></div>
+    <p>团队乘船上岛，行程含自由活动+午餐时段。上岛后可租电动自行车环岛（约 15,000 韩元）打卡珊瑚沙滩、牛头峰灯塔，或试试牛岛花生冰淇淋和汉拿山炒饭。跟团午餐通常自理或团餐，按产品说明为准。</p>
+    <div class="tips"><b>提醒：</b>乘船购票需护照 ｜ 船票通常自理（往返约 8,500 韩元/人）｜ 11月底岛上风大，帽子手套用得上</div>
+  </div>
+  <div class="stop">
+    <div class="dot"></div>
+    <div class="head"><span class="t">13:00 <em>城山</em></span><span class="name">城山日出峰 ⭐世界自然遗产（停留 50 分钟）</span></div>
+    <p>登顶 30-40 分钟刚好在停留时间内完成，火山口+海景大场面。山脚偶有海女表演，赶得上可以看一眼。</p>
+    <div class="tips"><b>信息：</b>门票 2,000 韩元 ｜ 冬季开放 7:00-17:50 ｜ 停留时间紧，直接爬观景步道别绕远</div>
+  </div>
+  <div class="stop">
+    <div class="dot"></div>
+    <div class="head"><span class="t">14:10 <em>涉地可支</em></span><span class="name">涉地可支 섭지코지（停留 50 分钟）</span></div>
+    <p>东部海岸最浪漫的一段：黑色熔岩悬崖+薄荷色海水+灯塔，《蓝色大海的传说》取景地。步道平缓好走，跟团 50 分钟足够走到灯塔折返。</p>
+    <div class="tips"><b>看点：</b>安藤忠雄设计的 Glass House ｜ 春季油菜花田，11月是海景原色 ｜ 免费开放</div>
+  </div>
+  <div class="stop meal">
+    <div class="dot"></div>
+    <div class="head"><span class="t">15:20 <em>月汀里</em></span><span class="name">月汀里海边（停留 40 分钟）· <a class="dp-link" href="https://m.dianping.com/shopinfo/G4QNwuss6MpnThcY" target="_blank" rel="noopener">moumoon 打卡</a></span></div>
+    <p>白沙滩+彩色小椅子+海上风车，果冻海经典机位。40 分钟纯打卡：拍照为主，moumoon 咖啡馆就在海滩边（点评 4.6 分·人均 ¥60），进店点杯外带、门面和落地窗拍照即可，不逗留。</p>
+  </div>
+  <div class="stop meal">
+    <div class="dot"></div>
+    <div class="head"><span class="t">16:20 <em>咸德</em></span><span class="name">咸德海水浴场（停留 40 分钟）→ ✅ 已定：在此提前离团</span></div>
+    <p>咸德是倒数第二站，<b>GOBDEULRAK 黑猪肉咸德店就在这片海滩旁</b>——<b>已确认在此离团</b>：上团当天跟导游说好"最后在咸德下车"，16:40 左右团车到咸德后离团。</p>
+  </div>
+  <div class="stop">
+    <div class="dot"></div>
+    <div class="head"><span class="t">16:45 <em>咸德海滩边</em></span><span class="name"><a class="dp-link" href="https://m.dianping.com/shopshare/H7YpWXtRE2vw7z19" target="_blank" rel="noopener">OLIVE YOUNG 咸德店 🛒 离团第一站</a></span></div>
+    <p>离团后先来这家 Olive Young（点评 4.7 分）——就在咸德海滩边（522 Johamhaean-ro），<b>海景好、货全、人少</b>，比市区莲洞店好逛得多。面膜护肤先买起来（Torriden、d'Alba 等热销款常有货），满 1.5 万韩元现场退税。逛完出门就是果冻海，海滩消食拍照。</p>
+    <div class="tips"><b>信息：</b>咸德海水浴场旁步行可达 ｜ 比市区店人少货全 ｜ 满₩15,000 现场退税（带护照） ｜ 18:00 前往隔壁 GOBDEULRAK 开饭</div>
+  </div>
+  <div class="stop meal">
+    <div class="dot"></div>
+    <div class="head"><span class="t">17:40 <em>（不走这段）</em></span><span class="name">团终点参考：东门市场 / 新罗免税店</span></div>
+    <p>按已定方案我们在咸德就下车了，不会走到终点，这里仅作参考：万一临时被要求跟完全程，17:40-18:20 在两个下车点散团（点 1 东门市场、点 2 新罗免税店，后者离酒店步行几分钟）。</p>
+    <div class="tips"><b>下车点怎么选：</b>想直接回酒店选新罗免税店点（酒店就在对面商圈）；想逛吃选东门市场点。⚠️ 东门市场周日公休，今天周六没问题。</div>
+  </div>
+  <div class="stop meal">
+    <div class="dot"></div>
+    <div class="head"><span class="t">18:40 <em>咸德·已定</em></span><span class="name"><a class="dp-link" href="https://m.dianping.com/shopinfo/l6b26cti9MvOpX9b" target="_blank" rel="noopener">晚餐：GOBDEULRAK 黑猪肉（咸德店）⭐重头戏</a></span></div>
+    <p>大众点评 4.8 分的黑猪肉名店，咸德海滩旁。离团后 Olive Young 采购+海滩消食，18:00 左右开饭：厚切黑猪五花肉+猪颈肉炭火慢烤，生菜包肉+蒜片+蘸酱，人均约 ¥134，店员全程代烤。吃完打车 30 分钟回酒店。</p>
+    <div class="tips"><b>信息：</b>地址 Hamdeok-ri 951-1（咸德海水浴场旁）｜ 营业约 16:00-23:00 ｜ 两人两份肉+小菜足够</div>
+</div>
+
+<div class="day">
+  <div class="dayhead">
+    <span class="d">11.29 周日 · Day 2</span>
+    <span class="theme">西线+南线：涯月 → 挟才 → 柱状节理带 · 睡到自然醒</span>
+    <span class="weather">5-14℃</span>
+  </div>
+  <div class="stop meal">
+    <div class="dot"></div>
+    <div class="head"><span class="t">09:00 <em>酒店旁</em></span><span class="name">轻早餐：<a class="dp-link" href="https://m.dianping.com/shopinfo/FI1xxUFtotSPV7dn" target="_blank" rel="noopener">恩熙家醒酒汤（老衡店）</a> / 紫菜包饭天国</span></div>
+    <p>昨天吃得太猛，今天早餐从简：点评 4.8 分的恩熙家醒酒汤（老衡店，人均 ¥57，离酒店打车 5 分钟），一碗热汤暖胃醒神；或 24 小时营业的紫菜包饭天国（牛肉紫菜包饭 4,000 韩元）就近解决，给中晚两顿大餐留胃。</p>
+  </div>
+  <div class="stop">
+    <div class="dot"></div>
+    <div class="head"><span class="t">10:00 <em>打车35分钟</em></span><span class="name">涯月：<a class="dp-link" href="https://m.dianping.com/shopinfo/kah864pOenORUuSZ" target="_blank" rel="noopener">Slowboat 咖啡 ☕</a></span></div>
+    <p>清水模+整面取景框窗正对大海，主打手冲咖啡，店里陈列选书和艺术杂志，文艺清冷风的"慢即是美"（点评 4.8 分·人均 ¥54）。避开人潮，上午是它最安静的样子。</p>
+    <div class="tips"><b>地址：</b>제주 제주시 애월읍 하귀1리 346-4（하귀2길 46-16 附近）｜ 周末营业 10:00-19:00 ｜ 拍照网红位是正对海的那扇"取景框"窗</div>
+  </div>
+  <div class="stop meal">
+    <div class="dot"></div>
+    <div class="head"><span class="t">12:00 <em>涯月午餐</em></span><span class="name">午餐：<a class="dp-link" href="https://m.dianping.com/shopinfo/k4RwrcK1on88bk9m" target="_blank" rel="noopener">暗行御史 涯月带鱼餐厅 🐟</a></span></div>
+    <p>点评 4.9 分的涯月带鱼专门店（人均 ¥177）：辣炖带鱼锅+烤带鱼，带鱼肉厚鲜嫩、汤底浓郁下饭，是涯月一带口碑最硬的正餐。离 Slowboat 车程 10 分钟，吃完正好接下午的挟才行程。</p>
+    <div class="tips"><b>信息：</b>地址 Aewol-ro 11-gil 27 ｜ 推荐点两人份辣炖带鱼+烤带鱼双拼 ｜ 怕辣提前跟店员说减辣</div>
+  </div>
+  <div class="stop meal">
+    <div class="dot"></div>
+    <div class="head"><span class="t">14:00 <em>打车15分钟</em></span><span class="name">挟才：<a class="dp-link" href="https://m.dianping.com/shopinfo/iJB0Yrh0DBiCXL6j" target="_blank" rel="noopener">休止符咖啡厅 쉼표 ⭐打卡</a></span></div>
+    <p>名字就很济州——在行程里按下"休止符"（点评 4.7 分·人均 ¥55）。三层小楼：一层落地窗、二层大秋千（最出片）、三层帐篷吊床区正对飞扬岛和挟才碧绿海水，《无限挑战》同款机位。</p>
+    <div class="tips"><b>地址：</b>제주 제주시 한림읍 한림로 359 ｜ 营业约 09:00-21:00 ｜ 3 楼中间那顶"最华丽的帐篷"是官方拍照位，店家还备了自拍杆支架 ｜ 拍完沿台阶直接下到挟才沙滩踩水</div>
+  </div>
+  <div class="stop">
+    <div class="dot"></div>
+    <div class="head"><span class="t">16:15 <em>打车50分钟</em></span><span class="name">柱状节理带（中文旅游区）⭐压轴</span></div>
+    <p>五、六角形石柱如屏风绵延约 1 公里，海浪撞上 30-40 米高的玄武岩柱壁，惊涛拍岸是济州最壮观的地质画面。傍晚夕阳斜照时氛围最好。</p>
+    <div class="tips"><b>⚠️ 卡点提醒：</b>营业 9:00-18:00，<b>最后入场 17:40</b>——务必 16:15 从休止符出发（打车约 50 分钟）；门票 2,000 韩元；游览约 1 小时。如果当天节奏拖了赶不上，就改为直接回市区，别硬赶。</div>
+  </div>
+  <div class="stop meal">
+    <div class="dot"></div>
+    <div class="head"><span class="t">18:30 <em>回市区50分钟</em></span><span class="name"><a class="dp-link" href="https://m.dianping.com/discovery/1440953599" target="_blank" rel="noopener">晚餐：Baro 烤猪蹄菜包饭 🐷 收官之夜</a></span></div>
+    <p>济州老网红猪蹄店，软烂入味分量大，生菜泡菜免费续。辣味是灵魂（内含年糕和菠萝，解腻一绝），配赠送的嫩豆腐汤，再来杯烧酒收尾。</p>
+    <div class="tips"><b>点单：</b>两人小份（约 31,000 韩元）足够 ｜ 营业 16:00-24:00（周一公休，今天周日没问题）｜ 地址 제주 제주시 노형동 735-8，离酒店打车 10 分钟 ｜ 只收 Visa/现金，不收微信支付宝 ｜ <b>吃辣版：</b>直接点辣味，别点双拼，原味容易腻</div>
+  </div>
+  <div class="stop meal">
+    <div class="dot"></div>
+    <div class="head"><span class="t">20:30 <em>猪蹄店出门即达</em></span><span class="name">🛍️ 七星路 & 宝健路 夜逛收官</span></div>
+    <p>Baro 猪蹄店所在的<b>老衡洞就在七星路西侧</b>，吃饱出门步行 10 来分钟开启夜逛。综合小红书多篇攻略的精华逛法：</p>
+    <div class="tips">
+      <b>📍 七星路段（潮人向，先逛）：</b><br>
+      · <b>The Islander</b>（관덕로4길7）：济州限定原创香水，6 款味道、绿色/紫色包装盲选不踩雷，打卡送冰箱贴——济州最值得带回的伴手礼之一<br>
+      · <b>ABC-Mart</b>：运动鞋折扣重镇，洞洞鞋/运动鞋经常比国内便宜，可现场退税<br>
+      · <b>umu 布丁</b>：ins 风布丁店（原味比花生味好吃），门面小但街景出片<br>
+      · <b>mood / mochiron / Plàner House</b>：本地杂货+曲奇+香氛选物店群，小众好淘（mochiron 注意确认营业时间，容易跑空）<br>
+      · <b>地下商业街 12 号入口</b>：贝壳冰箱贴仅 27 元（海边卖 50），雨天备选
+    </div>
+    <div class="tips" style="margin-top:8px;">
+      <b>📍 宝健路段（采购向，后逛）：</b><br>
+      · <b>Olive Young</b>（开到约 22:00）：Torriden 面膜、Beplain 绿豆洗面奶、d'Alba 空姐喷雾、碱水结零食；<b>满 1.5 万韩元现场退税</b>，付款当场核对小票件数（有漏扫/多扫案例）<br>
+      · <b>Come by Come 掌门狗手信店</b>：60-70 元/件，款式全，送人首选<br>
+      · 韩妆大牌别在这买：<b>免税店 App 线上下单+机场提货比线下便宜约 30%</b>（线上需提前 3 天下单，爆款要提前蹲货）
+    </div>
+    <div class="tips" style="margin-top:8px;">
+      <b>⏰ 时间与退税：</b>大部分店铺 21:00-22:00 打烊，此时段重在氛围+买齐必需品 ｜ 免税店 19:30 已关门，免税购物走 App 下单机场提货 ｜ 服饰类满 3 万韩元主动问 "tax free" 要退税单，机场统一退
+    </div>
+  </div>
+  <div class="stop">
+    <div class="dot"></div>
+    <div class="head"><span class="t">22:00 <em>收尾</em></span><span class="name">步行/打车回酒店收拾行李</span></div>
+    <p>宝健路就在酒店所在莲洞商圈，逛完步行回格洛斯特即可。明早 5 点半起床赶飞机，今晚把退税单据、登机牌、行李归置好，早点睡。</p>
+  </div>
+</div>
+
+<div class="day">
+  <div class="dayhead">
+    <span class="d">11.30 周一 · 返程</span>
+    <span class="theme">早班机回家</span>
+  </div>
+  <div class="stop">
+    <div class="dot"></div>
+    <div class="head"><span class="t">05:30 <em>出发</em></span><span class="name">打车赴济州国际机场（5-10 分钟）</span></div>
+    <p>值机 → 退税 → 安检 → 出境。机场店 9 点后才开，免税品需到杭州萧山 T4 到货口提取。8:14 落地杭州，直接去上班/回家都不耽误。</p>
+    <div class="tips"><b>提示：</b>Olive Young 逛机场店要在安检之前；退税窗口早上人多，预留充足时间。⚠️ 周一 Baro 猪蹄公休，别想着临走再去吃。</div>
+  </div>
+</div>
+
+<!-- 打卡清单 -->
+<h2 id="sec4"><span class="num">4</span>指定打卡清单 <span class="sub">｜你的清单 · 速查卡</span></h2>
+<div class="checks">
+  <div class="check"><div class="fn"><b>休止符咖啡 쉼표</b><i>✓ Day2 挟才</i></div><p>2楼秋千3楼吊床，正对飞扬岛，《无限挑战》取景。</p><div class="meta">한림읍 한림로 359<br>09:00-21:00</div></div>
+  <div class="check"><div class="fn"><b>Cafe moumoon</b><i>✓ Day1 月汀里</i></div><p>全景落地窗果冻海，云朵咖啡+提拉米苏，日落最绝。</p><div class="meta">구좌읍 해맞이해안로 460 2층<br>10:00-20:30</div></div>
+  <div class="check"><div class="fn"><b>Slowboat</b><i>✓ Day2 涯月</i></div><p>清水模文艺咖啡，手冲+选书，取景框窗看海。</p><div class="meta">애월읍 하귀1리 346-4<br>周末 10:00-19:00</div></div>
+    <div class="check"><div class="fn"><b>七星路 & 宝健路</b><i>✓ Day2 晚</i></div><p>猪蹄店步行即达，喷泉夜景+OY采购+掌门狗手信。</p><div class="meta">大部分店铺营业至21-22点</div></div>
+  <div class="check"><div class="fn"><b>Baro 烤猪蹄</b><i>✓ Day2 晚餐</i></div><p>辣味灵魂，配年糕菠萝，生菜免费续。</p><div class="meta">노형동 735-8 ｜ 16:00-24:00</div><div class="warn2">周一公休｜只收Visa/现金</div></div>
+    <div class="check"><div class="fn"><b>24时土豆排骨汤</b><i>✓ 落地夜宵夜</i></div><p>45年老店，脊骨脱骨土豆粉糯，点评4.8分。</p><div class="meta">47 Sammu-ro ｜ 24小时营业｜人均¥62</div></div>
+  <div class="check"><div class="fn"><b>OLIVE YOUNG(咸德店)</b><i>✓ Day1 离团后</i></div><p>海景好货全人少，比莲洞店好逛，满₩1.5万退税。</p><div class="meta">咸德海滩旁 ｜ 点评4.7分</div></div>
+  <div class="check"><div class="fn"><b>GOBDEULRAK黑猪(咸德)</b><i>✓ Day1 晚餐</i></div><p>点评4.8分，咸德海滩旁，日落后来一顿炭火黑猪。</p><div class="meta">Hamdeok-ri 951-1 ｜ 约16:00-23:00｜人均¥134</div></div>
+  <div class="check"><div class="fn"><b>柱状节理带</b><i>✓ Day2 压轴</i></div><p>五六角石柱绵延1公里，惊涛拍岸，夕阳最美。</p><div class="meta">西归浦 中文洞 ｜ 9:00-18:00<br>最后入场17:40｜门票2,000₩</div></div>
+  <div class="check"><div class="fn"><b>牛岛 + 日出峰</b><i>✓ Day1 主线</i></div><p>环岛骑行果冻海+世界自然遗产火山口登顶。</p><div class="meta">城山港乘船 ｜ 往返8,500₩</div><div class="warn2">乘船必须带护照｜17:00前回港</div></div>
+</div>
+
+<!-- 实用信息 -->
+<h2 id="sec5"><span class="num">5</span>预算参考 <span class="sub">｜两人同行 · 人均口径（不含机票酒店）</span></h2>
+<div class="budget">
+  <div class="bt">💰 济州两日花费估算（2026.11 物价水平，按 1 元 ≈ 190 韩元）</div>
+
+  <div class="budget-grid">
+    <div class="bsum"><div class="n">人均总预算（含一日团）</div><div class="v">约 ¥1,300-1,600</div><div class="s">不含往返机票与酒店房费</div></div>
+    <div class="bsum"><div class="n">建议现金兑换</div><div class="v">₩200,000-250,000/人</div><div class="s">约 ¥1,050-1,300，市场/打车/小店刚需</div></div>
+  </div>
+
+  <table>
+    <tr><th>项目</th><th>明细</th><th>人均估算</th></tr>
+    <tr><td>🍜 一日团团费（Day1 东线）</td><td>飞猪 C 豪华线，含酒店接送+导游</td><td>¥250</td></tr>
+    <tr><td>🐮 Day1 自费项目</td><td>牛岛船票 ₩8,500 + 环岛电动车 ₩15,000 + 日出峰门票 ₩2,000</td><td>≈ ¥135</td></tr>
+    <tr><td>🍲 落地夜：24时土豆排骨汤</td><td>人均含加菜</td><td>≈ ¥62</td></tr>
+    <tr><td>🐷 Day1 晚：GOBDEULRAK 黑猪</td><td>两人两份肉+小菜</td><td>≈ ¥134</td></tr>
+    <tr><td>🍙 Day2 早餐：恩熙家醒酒汤</td><td>一碗汤+小菜</td><td>≈ ¥57</td></tr>
+    <tr><td>🐟 Day2 午餐：暗行御史带鱼</td><td>两人份炖+烤双拼</td><td>≈ ¥177</td></tr>
+    <tr><td>🍖 Day2 晚：Baro 烤猪蹄</td><td>小份+赠送豆腐汤</td><td>≈ ¥100</td></tr>
+    <tr><td>☕ 咖啡甜点（2天3店）</td><td>Slowboat/休止符/moumoon 各一杯+甜点</td><td>≈ ¥130</td></tr>
+    <tr><td>🎫 Day2 门票</td><td>柱状节理带 ₩2,000</td><td>≈ ¥11</td></tr>
+    <tr><td>🚕 交通打车（两人分摊）</td><td>Day2 全天（市区↔涯月↔挟才↔南线↔市区）+ 落地/返程机场 + Day1 回程，约 ₩130,000/车</td><td>≈ ¥340</td></tr>
+    <tr><td>📱 流量卡+杂项</td><td>流量卡约¥25 + 备用</td><td>≈ ¥50</td></tr>
+    <tfoot><tr><td colspan="2">人均合计（不含购物）</td><td><b>约 ¥1,446</b></td></tr></tfoot>
+  </table>
+
+  <div class="bnote">
+    <b>💡 预算说明：</b><br>
+    · 表内按行程里已定的店和项目估算，上浮 10% 作缓冲，实际准备 <b>¥1,300-1,600</b> 现金+卡即可从容覆盖<br>
+    · 现金需求场景：东门式小摊、部分餐厅（Baro 只收 Visa/现金）、打车、市场——两人合计建议兑 <b>₩40-50 万</b><br>
+    · 大额走 Visa/银联卡；Olive Young、免税店支持支付宝/微信（OY 满 ₩15,000 可现场退税）<br>
+    · 购物预算另计：Olive Young 护肤 ₩30,000-100,000 不等，看个人<br>
+    · 若海女包饭临时加进 Day2 或有临时加餐，预留 ¥100-150 弹性
+  </div>
+</div>
+
+<h2 id="sec6"><span class="num">6</span>实用信息 <span class="sub">｜行前必读</span></h2>
+<div class="grid">
+  <div class="info">
+    <h3>🛂 免签 & 入境</h3>
+    <ul>
+      <li>中国护照直飞济州<b>免签30天</b>，护照有效期需 6 个月以上</li>
+      <li>随身带：往返机票行程单 + 酒店订单截图/打印件</li>
+      <li>可提前填韩国电子入境申报（省排队时间）</li>
+    </ul>
+  </div>
+  <div class="info">
+    <h3>🧥 天气与穿衣（11月底）</h3>
+    <ul>
+      <li>白天 10-14℃ / 夜间 4-8℃，海边风大</li>
+      <li>穿衣公式：卫衣/毛衣 + 防风外套，围巾帽子各一</li>
+      <li>舒服的鞋！牛岛骑行、日出峰登顶都靠腿</li>
+    </ul>
+  </div>
+  <div class="info">
+    <h3>💳 钱怎么带</h3>
+    <ul>
+      <li>约 90% 店铺<b>不支持支付宝/微信</b></li>
+      <li>每人备 <b>20-25 万韩元</b>现金（详见上方预算表：两人合计 ₩40-50 万）</li>
+      <li>Visa/银联卡 + 少量人民币应急；机场汇率一般，可先少换</li>
+      <li>两人打车合计约 <b>13 万韩元</b>（Day2 全天 + 机场往返 + Day1 回程）</li>
+    </ul>
+  </div>
+  <div class="info">
+    <h3>🚕 岛内交通</h3>
+    <ul>
+      <li>本行程跨东/西/南三线，<b>全程打车最省时</b>，起步价 4,800 韩元</li>
+      <li>Kakao T 叫车 + 韩文地址定位（已附在每站）</li>
+      <li>偏远海岸 18:00 后叫车难，行程已按"天黑前回市区"设计</li>
+      <li>打车单价参考：市区→城山约 4 万、市区→涯月约 3 万</li>
+    </ul>
+  </div>
+  <div class="info">
+    <h3>📱 必装 APP</h3>
+    <ul>
+      <li><b>Naver Map</b>：导航认它，支持中文</li>
+      <li><b>Papago</b>：翻译神器，菜单直接拍照翻</li>
+      <li><b>Kakao T</b>：韩国版滴滴</li>
+      <li><b>大众点评</b>：看餐厅评分与网友实拍（微信内打开需复制链接到浏览器）</li>
+      <li>提前买好韩国流量卡，否则 Naver/打车都用不了</li>
+    </ul>
+  </div>
+  <div class="info">
+    <h3>🔌 杂项</h3>
+    <ul>
+      <li>韩国插座为<b>两孔圆头</b>，带转换插头</li>
+      <li>酒店基本不提供一次性洗漱用品</li>
+      <li>自来水喝冷水为主，肠胃弱自带保温杯</li>
+      <li>马路上垃圾桶少，自备小垃圾袋</li>
+      <li>报警 112 / 急救 119（均有中文服务）</li>
+    </ul>
+  </div>
+</div>
+
+<div class="warn" style="margin-top:14px;">
+  <h3>⚠️ 避坑提醒</h3>
+  <ul>
+    <li><b>牛岛乘船必须带护照</b>，忘带=上不了岛，出发前放包里</li>
+    <li>烤肉店<b>按人头点餐</b>，不支持两人点一份；打包了就不能堂食</li>
+    <li>Baro 猪蹄等小店只收 Visa/现金，微信支付宝不行</li>
+    <li>结账把钱/卡递到收银员手里，不要放桌上</li>
+    <li>不走人行横道横穿马路会被罚款；扶梯靠右站</li>
+    <li>东门市场夜市周日公休——本攻略没有安排它，别临时改去扑空</li>
+  </ul>
+</div>
+
+<!-- 打包清单 -->
+<h2 id="sec7"><span class="num">7</span>打包清单 <span class="sub">｜照着装就行</span></h2>
+<div class="pack">
+  <span>🛂 护照（一日团牛岛乘船必带）</span>
+  <span>🎫 机票+酒店订单</span>
+  <span>💳 现金/Visa卡/银联卡</span>
+  <span>📱 流量卡 + T-money卡</span>
+  <span>🔌 转换插头</span>
+  <span>🔋 充电宝</span>
+  <span>🧥 卫衣+防风外套</span>
+  <span>🧣 围巾+帽子+手套</span>
+  <span>👟 舒适的鞋</span>
+  <span>☂️ 折叠伞</span>
+  <span>🪥 洗漱用品</span>
+  <span>💊 肠胃药/感冒药</span>
+  <span>🗑️ 便携垃圾袋</span>
+</div>
+
+<!-- 韩语速查 -->
+<h2 id="sec8"><span class="num">8</span>点餐韩语速查 <span class="sub">｜救命十句</span></h2>
+<table>
+  <tr><th>场景</th><th>韩语</th><th>读音</th></tr>
+  <tr><td>你好/谢谢</td><td>안녕하세요 / 감사합니다</td><td>annyeonghaseyo / gamsahamnida</td></tr>
+  <tr><td>这个，来一份</td><td>이거 하나 주세요</td><td>igeo hana juseyo</td></tr>
+  <tr><td>两个人</td><td>두 명이에요</td><td>du myeong-ieyo</td></tr>
+  <tr><td>买单</td><td>계산해 주세요</td><td>gyesanhae juseyo</td></tr>
+  <tr><td>多少钱？</td><td>얼마예요?</td><td>eolmayeyo</td></tr>
+  <tr><td>不辣的/微辣</td><td>안 맵게 / 조금만 매워요</td><td>an maepge / jogeumman maewoyo</td></tr>
+  <tr><td>打包带走</td><td>포장해 주세요</td><td>pojanghae juseyo</td></tr>
+  <tr><td>（去这里）请送我到这</td><td>여기로 가 주세요</td><td>yeogiro ga juseyo</td></tr>
+  <tr><td>水，请给我</td><td>물 주세요</td><td>mul juseyo</td></tr>
+  <tr><td>洗手间在哪？</td><td>화장실 어디예요?</td><td>hwajangsil eodiyeyo</td></tr>
+</table>
+
+<footer>
+  济州岛打卡之旅 · 2026.11.27 - 11.30 · 朋友结伴版<br>
+  祝你们吃得开心，玩得尽兴 🍊
+</footer>
+
+</div>
+
+<script>
+(function(){
+  // 返回顶部
+  var bt = document.getElementById('backTop');
+  if(bt){
+    window.addEventListener('scroll', function(){
+      bt.style.display = window.scrollY > 600 ? 'flex' : 'none';
+    }, {passive:true});
+    bt.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+  }
+  // 滚动渐显（IntersectionObserver，无JS环境自动降级为全部可见）
+  if('IntersectionObserver' in window){
+    var obs = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('rise'); obs.unobserve(e.target); } });
+    },{threshold:.06});
+    document.querySelectorAll('.day,.check,.info,.budget,.mapbox,.routechain,.pack,.fcard,.hotel,.warn').forEach(function(el){obs.observe(el);});
+  }
+})();
+</script>
+<button id="backTop" aria-label="返回顶部">↑</button>
+</body>
+</html>
